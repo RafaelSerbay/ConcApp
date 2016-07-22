@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <SearchView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:paddingRight="10dp"
+            android:id="@+id/teamsSearchView"
+            />
+        <Button
+            android:id="@+id/btnTeamAdd"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_add_black_24dp" />
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamsListView"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
